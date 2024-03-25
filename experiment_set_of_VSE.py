@@ -13,7 +13,8 @@ import numpy as np
 from copy import deepcopy
 import matplotlib
 from matplotlib import pyplot as plt
-import open_clip
+# import open_clip
+import clip
 
 from predict_clip_ret_score import load_clip, id2vocab, tokenizer, clip_pred, Recall_at_K
 
@@ -33,10 +34,10 @@ args = parser.parse_args()
 
 # Load CLIP model
 device = args.device
-# model, img_preprocess = load_clip(args.model_name, device=device)
+model, img_preprocess = load_clip(args.model_name, device=device)
 
-model, _, img_preprocess = open_clip.create_model_and_transforms('ViT-B-32', pretrained='laion2b_s34b_b79k')
-tokenizer = open_clip.get_tokenizer('ViT-B-32')
+# model, _, img_preprocess = open_clip.create_model_and_transforms('ViT-B-32', pretrained='laion2b_s34b_b79k')
+# tokenizer = open_clip.get_tokenizer('ViT-B-32')
 
 # Load dataset
 from densely_captioned_images.dataset.impl import get_summarized_dataset_with_settings, DenseCaptionedDataset
