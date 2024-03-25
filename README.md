@@ -39,3 +39,18 @@ bash run_docker.sh
   - `partial`：部分埋め込み
   - `hybrid`：大域＋部分埋め込み
 
+
+### 書誌情報
+```bibtex
+品川政太朗, 中村哲. 集合型視覚言語埋め込み.  
+第259回自然言語処理研究発表会, 2024-NL-259, 2024.  
+```
+```bibtex
+@misc{shinagawa2024setvse,
+  title={集合型視覚言語埋め込み},
+  author={品川政太朗 and 中村哲},
+  booktitle={第259回自然言語処理研究発表会},
+  pages={2024-NL-259},
+  year={2024}
+}
+```
